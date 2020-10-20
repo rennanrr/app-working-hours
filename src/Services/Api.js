@@ -3,7 +3,7 @@ import jwt from 'jwt-decode'
 import { logout } from '../Actions/userActions';
 
 const Api = axios.create({
-  baseURL: process.env.API_URL
+  baseURL: process.env.API_URL || "http://localhost:3000/api/v1/"
 });
 
 Api.interceptors.request.use(async config => {

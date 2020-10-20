@@ -5,7 +5,7 @@ import Api from "../Services/Api";
 const signin = (email, password) => async (dispatch) => {
   dispatch({ type: USER_SIGNIN_REQUEST, payload: { email, password } });
   try {
-    const { data } = await Api.post("/api/user/signin", { email, password });
+    const { data } = await Api.post("/user/signin", { email, password });
     
     dispatch({ type: USER_SIGNIN_SUCCESS, payload: jwt(data) });
     localStorage.setItem('X-ACCESS-TOKEN', data);
