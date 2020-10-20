@@ -1,25 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Suspense, lazy, Fragment} from 'react';
+import {Route, Redirect} from 'react-router-dom';
 import './App.css';
+const SigninScreen = lazy(() => import('./Screens/SigninScreen'));
+const ClockPoint = lazy(() => import('./Screens/ClockPoint'));
+
+function LoadMessage(props) {
+  return (
+    <div className="loader-container">
+      <div className="loader-container-inner">
+          <h6 className="mt-5">
+            Loading {props.name} Screen
+            <small>You are almost there...</small>
+          </h6>
+      </div>
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      {/* Home Screen */}
+      <Suspense fallback={
+        <LoadMessage name={"Home"}></LoadMessage>
+      }>
+        <Route path="/clockpoint" component={ClockPoint} />
+      </Suspense>
+
+      {/* Signin Screen */}
+      <Suspense fallback={
+        <LoadMessage name={"Signin"}></LoadMessage>
+      }>
+          <Route path="/signin" component={SigninScreen} />
+      </Suspense>
+
+      <Route exact path="/" render={() => (
+        <Redirect to="/clockpoint"/>
+        )}/>
+    </Fragment>
   );
 }
 
