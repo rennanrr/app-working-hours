@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Oowlish - Pre qualification test
 
-## Available Scripts
+Developed by Rennan Ribas.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `yarn start`
+The following tools were used in the construction of the project:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Website (React 16 the one with Hooks) (https://github.com/rennanrr/app-working-hours)
+- NodeJS
+- ReactJS
+- Redux
+- Bootstrap
+- Rest API Connection with Axios
+- Authentication with JSON Web Token
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### [Server NodeJs](https://github.com/rennanrr/api-working-hours)
+- Express
+- Sequelize
+- PostgreSQL
+- Nodemon
+- Dotenv
+- JWT
+- Axios
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+Pre-requisits:
+- Node.js
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you do not have, follow the instructions on [this link](https://nodejs.org/en/download/).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Then, clone this repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/rennanrr/app-working-hours
 
-### `yarn eject`
+```
+You have to compile and install node modules of this project into your machine:
+```
+npm install 
+```
+Finally, to run:
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+After, you will have to install Backend API, please, follow the instructions on README.md of [this repo](https://github.com/rennanrr/api-working-hours)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Access:
+To access the clock point, you need to insert Email and Password, I have created two examples:
+```
+Email: edney.cruz@oowlish.com
+Password: 1234
+```
+```
+Email: rennanrr@hotmail.com
+Password: 1234
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
