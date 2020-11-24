@@ -1,4 +1,4 @@
-# Oowlish - Pre qualification test
+# Basic application using React and Redux
 
 Developed by Rennan Ribas.
 
