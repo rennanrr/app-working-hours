@@ -51,10 +51,6 @@ After, you will have to install Backend API, please, follow the instructions on 
 ## Access:
 To access the clock point, you need to insert Email and Password, I have created two examples:
 ```
-Email: edney.cruz@oowlish.com
-Password: 1234
-```
-```
 Email: rennanrr@hotmail.com
 Password: 1234
 ```
